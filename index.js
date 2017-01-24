@@ -22,5 +22,5 @@ const removeFromPlaylist = (playlist, episode) => {
 }
 function bingeWatch(playlist) {
 	if (!playlist.length) return 'Please let there be more!'
-	return bingeWatch(removeFromPlaylist(playlist))
+	return bingeWatch(removeFromPlaylist(playlist, playlist[0]))
 }
